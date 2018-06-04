@@ -1,5 +1,7 @@
 # psychic-game
 
+Game URL : https://rronakk.github.io/psychic-game/
+
 ## Instruction :
 
 - the app randomly picks a letter, and the user has to guess which letter the app chose. Put the following text on your page:
@@ -18,4 +20,3 @@
 
 - When the player loses, increase the Losses counter and restart the game without a page refresh (just like when the user wins).
 
-Game URL : https://rronakk.github.io/psychic-game/
