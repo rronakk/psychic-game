@@ -17,13 +17,15 @@ document.addEventListener("keydown", function onPress(event) {
             guessedWord.textContent = "";
         }
         else{
-            guessLeft--;
             if (guessLeft == 0){
                 lossCount++;
                 guessLeft = 9;
                 guessedWord.textContent = "";
             }
-            guessedWord.textContent += event.key + ", " ;
+            else if (!guessedWord.textContent.includes(event.key)){
+                guessedWord.textContent += event.key + ", " ;
+                guessLeft--;
+            }
         }
         document.getElementById("wins").textContent = winCount;
         document.getElementById("loss").textContent = lossCount;
